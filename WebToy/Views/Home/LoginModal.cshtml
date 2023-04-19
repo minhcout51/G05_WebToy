@@ -1,42 +1,48 @@
 ﻿
 @{
+    //ViewData["Title"] = "Home Page";
 }
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link  type="stylesheet" href="~/css/Login_Dialog.css"   />
+    <script src="~/js/Login_Modal.js"></script>
+<div class="container">
+  <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+    Login
+  </button>  
+</div>
 
-            <DialogContent>
-                        <table>
-                            <tr>
-                                <td>
-                                    <p style="margin-top: 5px;">
-                                        Please enter your username and password<p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Username
-                                    <p class="reqired">*</p>
-                                    <input type="text" id="txtName" name="txtName" class="ejinputtext" style="width: 100%" required /><br />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Password
-                                    <p class="reqired">*</p>
-                                    <input type="password" id="txtPassword" name="txtPassword" class="ejinputtext" style="width: 100%" required />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" id="txtRember" class="ejinputtext" required />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center">
-                                    <br />
-                                    <ej:Button ID="downloadBtn" Text="LOGIN" CssClass="e-btn" Width="100px" Height="30px" runat="server" Size="Medium" Type="Button" ClientSideOnClick="formsubmit"></ej:Button>
-                                    <label class="error" for="btn"></label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center" style="font-size: 12px; padding-top: 8px;">Don't have an account ? <a href="#">Signup</a>
-                                </td>
-                            </tr>
-                        </table>
-                    </DialogContent>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          X
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-title text-center">
+          <h4>Đăng nhập</h4>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email1"placeholder="User name ...">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" placeholder="Mật khẩu ...">
+            </div>
+            <button type="button" class="btn btn-info btn-block btn-round btn-xs">Đăng nhập </button>
+             <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">Chưa có tài khoản? <a href="#a" class="text-info"> Đăng ký</a>.</div>
+      </div>
+          </form>
+          
+          <div class="d-flex justify-content-center social-buttons">
+  
+          </div>
+        </div>
+      </div>
+    </div>
+     
+  </div>
+</div>
