@@ -1,0 +1,42 @@
+﻿
+@{
+}
+
+            <DialogContent>
+                        <table>
+                            <tr>
+                                <td>
+                                    <p style="margin-top: 5px;">
+                                        Please enter your username and password<p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Username
+                                    <p class="reqired">*</p>
+                                    <input type="text" id="txtName" name="txtName" class="ejinputtext" style="width: 100%" required /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password
+                                    <p class="reqired">*</p>
+                                    <input type="password" id="txtPassword" name="txtPassword" class="ejinputtext" style="width: 100%" required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="txtRember" class="ejinputtext" required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <br />
+                                    <ej:Button ID="downloadBtn" Text="LOGIN" CssClass="e-btn" Width="100px" Height="30px" runat="server" Size="Medium" Type="Button" ClientSideOnClick="formsubmit"></ej:Button>
+                                    <label class="error" for="btn"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="font-size: 12px; padding-top: 8px;">Don't have an account ? <a href="#">Signup</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </DialogContent>
