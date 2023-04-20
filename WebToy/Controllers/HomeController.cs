@@ -27,11 +27,15 @@ namespace WebToy.Controllers
         {
             return View();
         }
-        public IActionResult LoginModal()
+        public IActionResult Login_Modal()
         {
             return View();
         }
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult SignUp_Modal()
+         {
+            return View();
+         }    
+            [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
