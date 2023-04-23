@@ -1,0 +1,53 @@
+﻿.container {
+    display: flex;
+}
+.WebToy-Logo{
+    width: 9rem;
+    height: 9rem;
+}
+/*.DanhSach-ThongTin > Li-ThongTin {
+    margin: 0.5rem 0;
+}*/
+.Li-ThongTin {
+    font-size: 1rem;
+    padding: 0.5rem 0 0.1rem 0;
+}
+.DanhSach_MXH {
+    display: flex;
+}
+footer {
+    background-color: white;
+    height: 13rem;
+}
+
+.Search {
+    width: 32rem;
+    border-color: rgb(0,0,0,0.4);
+}
+
+.ul-1st {
+    list-style-type: none;
+    display: flex;
+}
+
+.li-1st {
+    padding: 0.8rem 0.4rem 0 0.4rem;
+}
+
+#dropdownMenuButton {
+    background-color: #FFEFD5;
+    font-size: 1.2rem;
+    text-indent: 0.2rem;
+    padding: 0.5rem;
+}
+
+.navbar-nav > li {
+    padding: 0 1rem 0 1rem;
+    font-size: 1.2rem;
+}
+
+.Login:hover {
+    background-color: white;
+    color: #0275d8;
+}
+

@@ -8,4 +8,8 @@
     <PackageReference Include="bootstrap" Version="5.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
 </Project>

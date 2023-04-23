@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebToy</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Partial_View.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 
+</head>
+
+    <header class="">
+        @*1st Navbar*@
+       <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-center" style="height:3.5rem;">
+           <ul class="ul-1st">
+  <li class="li-1st"><a class="navbar-brand" href="#">Navbar</a></li>
+  
+  <li class="li-1st"><div class="">
+        <input class="form-control Search "  type="text" >
+     </div> </li>
+      
+      <li class="li-1st"><div>
+                 <button type="button" class="btn btn-primary Login">Đăng nhập</button>
+         </div></li></ul>
+
+        
+</nav>
+            @* 2nd navbar style="background-color:#F5FFFA;" *@
+        <nav  style="background-color:#FFEFD5;" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow">
+            <div class="container ">
+               
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between " >
+                    <ul class="navbar-nav flex-grow-1" >
+                        <li class="nav-item" id="2nd-li">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                        </li>
+                        
+                          <li class="nav-item" id="2nd-li">
+                             <div class="dropdown">
+    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sản phẩm
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Máy bay điều khiển từ xa</a>
+    <a class="dropdown-item" href="#">Flycam</a>
+    <a class="dropdown-item" href="#">Xe điều khiển từ xa</a>
+    <a class="dropdown-item" href="#">Cano điều khiển từ xa</a>
+    <a class="dropdown-item" href="#">Tàu điều khiển từ xa</a>
+  </div>
+</div>
+                        </li>
+                        <li class="nav-item" id="2nd-li">
+                             <div class="dropdown">
+    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Độ tuổi
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">0 - 12 tháng</a>
+    <a class="dropdown-item" href="#">1 - 3 tuổi</a>
+    <a class="dropdown-item" href="#">3 - 5 tuổi</a>
+    <a class="dropdown-item" href="#">Trên 5 tuổi</a>
+
+  </div>
+</div>
+                        </li>
+                        <li class="nav-item" id="2nd-li">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login_Modal">Login</a>
+                        </li>
+                      
+                           <li class="nav-item" id="2nd-li">
+                             <a class="nav-link text-dark" href="#">Khuyến mãi</a>
+                       </li>
+                       <li class="nav-item" id="2nd-li">
+                             <a class="nav-link text-dark" href="#">Giỏ hàng</a>
+                       </li>
+                       <li class="nav-item" id="2nd-li">
+                             <a class="nav-link text-dark" href="#">Hệ thống cửa hàng</a>
+                       </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <body>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    </body>
+    @*Footer*@
+   <footer class="border-top footer text-muted">
+        <div class="container">
+           <div class="Logo">
+               <img class="WebToy-Logo" alt="WebToy logo" src=~/Images/Logo.png/>
+           </div>
+           <div class="LienHe">
+               <ul class="DanhSach-ThongTin">
+                   <li class="Li-ThongTin"> Điện thoại: 0123456789</li>
+                   <li class="Li-ThongTin"> Email: g05webtoy@gmail.com</li>
+                   <li class="Li-ThongTin"> Địa chỉ: 1 Quang Trung Quận 12</li>
+               </ul>
+           </div>
+           <div class"ThongTin">
+               <p>WebToy là cửa hàng bán đồ chơi <br /> gồm nhiều sản phẩm với nhiều loại đồ chơi khác nhau <br /> dành cho trẻ em nhiều độ tuổi khác nhau</p>
+           </div>
+           <div class="ThanhToan">
+                <ul class="DanhSach_MXH">
+                    <a target="_blank" href="https://www.facebook.com"><img src="~/Images/facebook.png"/></a>
+                    <a target="_blank" href="https://www.facebook.com"><img src="~/Images/facebook.png"/></a>
+                    <a target="_blank" href="https://www.facebook.com"><img src="~/Images/facebook.png"/></a>
+                </ul>
+           </div>
+        </div>
+    </footer>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</html>
