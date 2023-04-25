@@ -1,13 +1,12 @@
 ﻿
 .container {
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
 }
 
 @media (min-width: 576px) {
     .modal-dialog {
         max-width: 400px;
        
-        .modal-content
        
 {
     padding: 1rem;
@@ -18,10 +17,10 @@ h4 {
     margin-bottom: 2rem;
 }
 .btn-custom {
-    font-size:2rem;
+    font-size:1.5rem;
 }
     .text-info {
-    color: 68c1c4;
+    color: #68c1c4;
 }
 .modal-header {
     .close
@@ -45,7 +44,7 @@ h4 {
 }
 
 .social-buttons {
-    .btn
+  
 
 {
     margin: 0 0.5rem 1rem;
