@@ -5,8 +5,14 @@
     })
 });
 $(document).ready(function () {
-    $('#signupModal').modal('show');
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+    
+    $('.SignUp').onClick(function () {
+        $('#loginModal').dialog('hide');
+        $('#signupModal').modal('show');
+        return false;
+    });
+    //$('#signupModal').modal('show');
+    //$(function () {
+    //    $('[data-toggle="tooltip"]').tooltip()
+    //})
 });
