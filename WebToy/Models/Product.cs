@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace WebToy.Models
 {
-    public class SanPham
+    public class Product
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
