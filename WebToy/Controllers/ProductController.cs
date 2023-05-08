@@ -13,15 +13,15 @@ namespace WebToy.Controllers
         [HttpPost]
         public IActionResult Index(Product p)
         {
-            if (ModelState.IsValid)
-            {
-                string constr = ConfigurationManager.AppSettings["connectionString"];
-            var Client = new MongoClient(constr);
-            var DB = Client.GetDatabase("G05_WebToy");
-            var collection = DB.GetCollection<Product>("ThongTinSanPham");
-            collection.InsertOneAsync(p);
-            return RedirectToAction("emplist");
-            }
+            //if (ModelState.IsValid)
+            //{
+            //    string constr = ConfigurationManager.AppSettings["connectionString"];
+            //var Client = new MongoClient(constr);
+            //var DB = Client.GetDatabase("G05_WebToy");
+            //var collection = DB.GetCollection<Product>("ThongTinSanPham");
+            //collection.InsertOneAsync(p);
+            //return RedirectToAction("emplist");
+            //}
             return View();
         }
 

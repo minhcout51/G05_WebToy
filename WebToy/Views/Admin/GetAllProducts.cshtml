@@ -1,0 +1,43 @@
+﻿@model IEnumerable<WebToy.Models.Product>    
+    
+@{    
+    ViewBag.Title = "Product Details";    
+}    
+    
+<h3 style="text-align:center">Employee Details</h3>    
+    
+<p>    
+    @Html.ActionLink("Add New Employee", "GetAllProducts","AdminController")    
+</p>    
+<table class="table">    
+    <tr>    
+        <th>    
+            @Html.DisplayNameFor(model => model.Name)    
+        </th>    
+        @*<th>    
+            @Html.DisplayNameFor(model => model.Department)    
+        </th>    
+        <th>    
+            @Html.DisplayNameFor(model => model.Address)    
+        </th>    
+        <th>    
+            @Html.DisplayNameFor(model => model.City)    
+        </th>    
+        <th>    
+            @Html.DisplayNameFor(model => model.Country)    
+        </th>    *@
+        <th></th>    
+    </tr>    
+@*    
+@foreach (var item in Model) {    
+    <tr>    
+       
+        <td>    
+           @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |    
+               
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })    
+        </td>    
+    </tr>    
+}    *@
+    
+</table>   
